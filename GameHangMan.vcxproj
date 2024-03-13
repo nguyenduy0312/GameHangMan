@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="GameHangMan.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="danhsachtuvung.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
