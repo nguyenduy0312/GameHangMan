@@ -127,10 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameHangMan.cpp" />
+    <ClCompile Include="Design.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RandomWord.cpp" />
+    <ClCompile Include="RandumNumber.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="danhsachtuvung.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Design.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="RandomWord.h" />
+    <ClInclude Include="RandumNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
