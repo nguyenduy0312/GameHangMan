@@ -1,3 +1,9 @@
-﻿  main.cpp
-C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(17,6): warning C4101: 'num': unreferenced local variable
+﻿  BaseObject.cpp
+  main.cpp
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(102,13): warning C4566: character represented by universal-character-name '\u1ECB' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(102,13): warning C4566: character represented by universal-character-name '\u1ECF' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(102,13): warning C4566: character represented by universal-character-name '\u1ED9' cannot be represented in the current code page (1258)
+  FUNCTION.cpp
+  stdafx.cpp
+  Generating Code...
   GameHangMan.vcxproj -> C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\x64\Debug\GameHangMan.exe

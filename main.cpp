@@ -1,100 +1,130 @@
-﻿#include"Function.h"
-#include"Design.h"
-#include"RandumNumber.h"
-#include"RandomWord.h"
+﻿#include "stdafx.h"
+#include "FUNCTION.h"
+#include "BaseObject.h"
+#include "MainObject.h"
+#include <iostream>
 
-bool win = false;
-string RandomWord(int);
-int RandomNumber(int);
-void Design(int);
-void PrinWord(string word, string letter);
+BaseObject g_background;
 
 
-
-int main() {
-	int live = 7;                      //Số lần còn lại có thể sai
-	int choice;                       // chọn mức độ khó
-	int num;
-	string letter;                   //chữ cái người chơi đoán
-	string word;                    // Từ cần đoán
-	string guessedLetter;           //Chữ cái đã đoán
-	cout << "Nhap vao muc do ban muon choi (do kho tang dan tu 1--->3): ";
-	cin >> choice;
-	while (choice < 1 || choice>3) {
-		system("cls");              // Xoa man hinh
-		cout << "Muc do choi khong hop le, hay nhap lai: ";
-		cin >> choice;
+bool InitData() {
+	bool success = true;
+	int ret = SDL_Init(SDL_INIT_VIDEO);
+	if (ret < 0) return false;
+	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
+	g_window = SDL_CreateWindow("Tro Choi HangMan",
+		SDL_WINDOWPOS_UNDEFINED,
+		SDL_WINDOWPOS_UNDEFINED,
+		SCREEN_WIDTH, SCREEN_HEIGHT,
+		SDL_WINDOW_SHOWN);
+	if (g_window == NULL) {
+		success = false;
 	}
-	word = RandomWord(choice);
-	system("cls");
-	bool help = false;
-	while (live > 0) {
-		win = true;
-		Design(live);
-		PrinWord(word, guessedLetter);
-		if (help) {
-			help = false;
-			win = false;
-		}
-		if (win == true) {
-			break;
-		}
-
-		cout << endl;
-		cout << "Neu can tro giup hay nhap 'help', luu y se bi tru 1 mang!!!" << endl;
-		cout << "Chu cai da nhap la: " << guessedLetter << endl;
-		cout << "Hay nhap vao 1 chu cai ban doan: ";
-		cin >> letter;
-		int x = 0;
-		for (int i = 0; i < letter.length(); i++) {
-			x++;
-		}
-		if (x >= 2) {
-			if (letter == "help") {
-				live--;
-				help = true;
-				cout << "Chu cai goi y: " << word[0];
-				letter = word[0];
-				system("pause");
-			}
-			else {
-				system("cls");
-				cout << "Luu y chi duoc nhap 1 chu cai duy nhat";
-			}
-		}
-		guessedLetter += letter[0];
-		if (word.find(letter) != -1 || help) {
-			system("cls");
-			continue;
-		}
+	else {
+		g_screen = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED);
+		if (g_window == NULL) success = false;
 		else {
-			live--;
-			system("cls");
+			SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
+			int imgFlags = IMG_INIT_PNG;
+			if (!(IMG_Init(imgFlags) && imgFlags)) {
+				success = false;
+			}
 		}
 	}
-	if (live == 0) {
-		system("cls");
-		cout << "Ban da thua cuoc" << endl;
-		cout << "Tu can doan: " << word;
-		system("pause");
-	}
-	if (live > 0) {
-		system("cls");
-		cout << "Ban da thang" << endl;
-		cout << "Tu can doan: " << word;
-		system("pause");
-	}
-	return 0;
+	return success;
 }
-//PrinWord là hàm in ra chữ cái người chơi đoán
-void PrinWord(string word, string letter) {
-	for (int i = 0; i < word.size(); i++) {
-		if (letter.find(word[i]) != -1) {
-			cout << word[i] << " ";
+// them anh 
+bool LoadBackground() {
+	bool ret = g_background.LoadImg("hinhanh//e8b96056-178a-4620-8430-2b3a9c0880c3.png", g_screen);
+	if (ret == false) return false;
+	return true;
+
+}
+
+void close() {
+	g_background.Free();
+	SDL_DestroyRenderer(g_screen);
+	g_screen = NULL;
+	SDL_DestroyWindow(g_window);
+	g_window = NULL;
+	IMG_Quit();
+	SDL_Quit();
+
+
+
+}
+
+
+int main(int argc, char* argv[]) {
+
+
+	if (InitData() == false) return -1;
+	if (LoadBackground() == false) return -1;
+
+	bool is_quit = false;
+
+	MainObject p_object01;
+	MainObject p_object02;
+	MainObject p_object03;
+	MainObject p_object04;
+	MainObject p_object05;
+	MainObject p_object06;
+	MainObject p_object07;
+
+	bool ret = p_object01.LoadImg("hinhanh//hm1.png", g_screen);
+	bool ret02 = p_object02.LoadImg("hinhanh//hm2.png", g_screen);
+	bool ret03 = p_object03.LoadImg("hinhanh//hm3.png", g_screen);
+	bool ret04 = p_object04.LoadImg("hinhanh//hm4.png", g_screen);
+	bool ret05 = p_object05.LoadImg("hinhanh//hm6.png", g_screen);
+	bool ret06 = p_object06.LoadImg("hinhanh//hm7.png", g_screen);
+	bool ret07 = p_object07.LoadImg("hinhanh//snapedit_1710953551881.png", g_screen);
+
+	p_object01.SetRect(285, 195);
+	p_object02.SetRect(278, 286);
+	p_object03.SetRect(145, 282);
+	p_object04.SetRect(395, 282);
+	p_object05.SetRect(265, 452);
+	p_object06.SetRect(337, 451);
+	p_object07.SetRect(240, 50);
+
+	if (!ret)return false;
+
+	while (!is_quit) {
+		while (SDL_PollEvent(&g_event) != 0) {
+			if (g_event.type == SDL_QUIT)
+			{
+				is_quit = true;
+			}
+			else if (g_event.type == SDL_MOUSEBUTTONDOWN) {
+				// Lấy vị trí của con trỏ chuột
+				int mouseX = g_event.motion.x;
+				int mouseY = g_event.motion.y;
+				SDL_Log("Vị trí con trỏ chuột: (%d, %d)", mouseX, mouseY);
+			}
 		}
-		else {
-			cout << "*";
-			win = false;
-		}
+		SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
+		SDL_RenderClear(g_screen);
+		g_background.Render(g_screen, NULL);
+		p_object01.Render(g_screen, NULL);
+		p_object02.Render(g_screen, NULL);
+		p_object03.Render(g_screen, NULL);
+		p_object04.Render(g_screen, NULL);
+		p_object05.Render(g_screen, NULL);
+		p_object06.Render(g_screen, NULL);
+		p_object07.Render(g_screen, NULL);
+
+
+
+
+		SDL_RenderPresent(g_screen);
+
 	}
+
+	close();
+
+
+
+
+
+	return 0;
 }

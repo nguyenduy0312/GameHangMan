@@ -70,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\VS2022\SDL2_image-2.8.2\include;C:\VS2022\SDL2-2.30.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\VS2022\SDL2-2.30.1\lib\x64;C:\VS2022\SDL2_image-2.8.2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -108,6 +112,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,19 +132,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Design.cpp" />
+    <ClCompile Include="BaseObject.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RandomWord.cpp" />
-    <ClCompile Include="RandumNumber.cpp" />
+    <ClCompile Include="FUNCTION.cpp" />
+    <ClCompile Include="MainObject.cpp" />
+    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="danhsachtuvung.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Design.h" />
-    <ClInclude Include="Function.h" />
-    <ClInclude Include="RandomWord.h" />
-    <ClInclude Include="RandumNumber.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="FUNCTION.h" />
+    <ClInclude Include="MainObject.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
