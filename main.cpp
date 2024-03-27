@@ -3,8 +3,11 @@
 #include "BaseObject.h"
 #include "MainObject.h"
 #include <iostream>
-
+#include <vector>
+#include <map>
+#include <unordered_map>
 BaseObject g_background;
+vector<bool>so(10, false);
 
 
 bool InitData() {
@@ -41,6 +44,10 @@ bool LoadBackground() {
 
 }
 
+
+
+
+
 void close() {
 	g_background.Free();
 	SDL_DestroyRenderer(g_screen);
@@ -56,6 +63,8 @@ void close() {
 
 
 int main(int argc, char* argv[]) {
+
+
 
 
 	if (InitData() == false) return -1;
@@ -79,16 +88,19 @@ int main(int argc, char* argv[]) {
 	bool ret06 = p_object06.LoadImg("hinhanh//hm7.png", g_screen);
 	bool ret07 = p_object07.LoadImg("hinhanh//snapedit_1710953551881.png", g_screen);
 
-	p_object01.SetRect(285, 195);
+	p_object01.SetRect(290, 205);
 	p_object02.SetRect(278, 286);
 	p_object03.SetRect(145, 282);
 	p_object04.SetRect(395, 282);
 	p_object05.SetRect(265, 452);
 	p_object06.SetRect(337, 451);
 	p_object07.SetRect(240, 50);
+	int live = 7;
 
 	if (!ret)return false;
-
+	
+    string s = "HANGMAN";
+	
 	while (!is_quit) {
 		while (SDL_PollEvent(&g_event) != 0) {
 			if (g_event.type == SDL_QUIT)
@@ -101,27 +113,56 @@ int main(int argc, char* argv[]) {
 				int mouseY = g_event.motion.y;
 				SDL_Log("Vị trí con trỏ chuột: (%d, %d)", mouseX, mouseY);
 			}
+			else if (g_event.type == SDL_KEYDOWN) { // Sự kiện phím được nhấn
+				string keyName = SDL_GetKeyName(g_event.key.keysym.sym);
+				cout << "Người dùng đã nhấn phím: " << keyName << endl ;
+				if (s.find(keyName) == -1) {
+					live--;
+					so[live] = true;
+				}
+				else {
+					continue;
+				}
+				cout << live<<endl;
+			}
+
+			SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
+			SDL_RenderClear(g_screen);
+			g_background.Render(g_screen, NULL);
+			p_object07.Render(g_screen, NULL);
+			for (int i = 1; i < so.size(); ++i) {
+				if (so[i]) {
+					switch (i) {
+					case 1:
+						p_object06.Render(g_screen, NULL);
+						break;
+					case 2:
+						p_object05.Render(g_screen, NULL);
+						break;
+					case 3:
+						p_object04.Render(g_screen, NULL);
+						break;
+					case 4:
+						p_object03.Render(g_screen, NULL);
+						break;
+					case 5:
+						p_object02.Render(g_screen, NULL);
+						break;
+					case 6:
+						p_object01.Render(g_screen, NULL);
+						break;
+					default:
+						break;
+					}
+				}
+			}
+			
+			SDL_RenderPresent(g_screen);
 		}
-		SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
-		SDL_RenderClear(g_screen);
-		g_background.Render(g_screen, NULL);
-		p_object01.Render(g_screen, NULL);
-		p_object02.Render(g_screen, NULL);
-		p_object03.Render(g_screen, NULL);
-		p_object04.Render(g_screen, NULL);
-		p_object05.Render(g_screen, NULL);
-		p_object06.Render(g_screen, NULL);
-		p_object07.Render(g_screen, NULL);
-
-
-
-
-		SDL_RenderPresent(g_screen);
-
 	}
 
 	close();
-
+	
 
 
 

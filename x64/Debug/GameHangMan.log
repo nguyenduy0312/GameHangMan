@@ -1,9 +1,8 @@
-﻿  BaseObject.cpp
-  main.cpp
-C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(102,13): warning C4566: character represented by universal-character-name '\u1ECB' cannot be represented in the current code page (1258)
-C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(102,13): warning C4566: character represented by universal-character-name '\u1ECF' cannot be represented in the current code page (1258)
-C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(102,13): warning C4566: character represented by universal-character-name '\u1ED9' cannot be represented in the current code page (1258)
-  FUNCTION.cpp
-  stdafx.cpp
-  Generating Code...
+﻿  main.cpp
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(114,13): warning C4566: character represented by universal-character-name '\u1ECB' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(114,13): warning C4566: character represented by universal-character-name '\u1ECF' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(114,13): warning C4566: character represented by universal-character-name '\u1ED9' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(118,13): warning C4566: character represented by universal-character-name '\u1EDD' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(118,13): warning C4566: character represented by universal-character-name '\u00E3' cannot be represented in the current code page (1258)
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(118,13): warning C4566: character represented by universal-character-name '\u1EA5' cannot be represented in the current code page (1258)
   GameHangMan.vcxproj -> C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\x64\Debug\GameHangMan.exe
