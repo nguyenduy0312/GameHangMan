@@ -1,0 +1,16 @@
+﻿  BaseObject.cpp
+  main.cpp
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(257,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(259,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(290,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(292,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(323,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\main.cpp(325,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  FUNCTION.cpp
+  MainObject.cpp
+  RandomNumber.cpp
+C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\GameHangMan\RandomNumber.cpp(4,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RandomWord.cpp
+  stdafx.cpp
+  Generating Code...
+  GameHangMan.vcxproj -> C:\Users\admin\Desktop\Visua2022\Hangman\GameHangMan\x64\Debug\GameHangMan.exe
