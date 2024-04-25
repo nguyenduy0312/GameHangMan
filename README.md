@@ -14,7 +14,7 @@ Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ t
 - [3. CHỌN LEVEL](#3-chọn-level)
 - [4. CÁCH CHƠI GAME](#4-cách-chơi-game)
 - [5. KIỂM TRA CHIẾN THẮNG](#5-kiểm-tra-chiến-thắng)
-- [6. KIỂM TRA THẤT BẠI](#6-kiếm-tra-thất-bại)
+- [6. KIỂM TRA THẤT BẠI](#6-kiểm-tra-thất-bại)
 - [7. KẾT THÚC VÀ QUAY LẠI MENU](#7-kết-thúc-và-quay-lại-menu)
 
 # 1. KHỞI ĐỘNG GAME
