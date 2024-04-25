@@ -95,6 +95,7 @@ sống của bạn vẫn lớn hơn 0 thì có nghĩa là bạn đã chiến th�
 -Ảnh ở trên mình đưa ra là do mình ấn nhầm 1 phím nên nó mới in ra phần đầu và trừ đi 1 mạng.
 
 #5. KIỂM TRA CHIẾN THẮNG
+
 -Khi bạn đoán đúng tất cả các chữ cái có trong từ mà máy đưa ra và số mạng sống còn lại của bạn lơn hơn 0 thì tức là
 bạn đã chiến thắng.
 
@@ -140,6 +141,7 @@ viên bạn cố gắng lần sau.
 
 
 #7. KẾT THÚC VÀ QUAY LẠI MENU
+
 -Sau khi chiến thắng hoặc thua cuộc trong game thì game sẽ phát ra âm thanh phù hợp với hoàn cảnh của bạn lúc bấy giờ.
 
 -Sau khi phát xog âm thanh thì game sẽ tự động quay về MENU ban đầu. Nếu muốn chơi tiếp thì bạn có thể lặp lại từ bước đầu,
