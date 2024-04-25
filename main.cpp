@@ -98,7 +98,7 @@ int main(int argc, char* argv[]) {
 	int mouseX, mouseY;
 	int choice;//nhap vao muc do muon choi vs 1,2,3 tương ung voi de, trung binh, kho
 	int live = 6;
-	
+	int x = 100;
 	char letter; // chu cai nguoi choi doan
 	// tao tu ngau nhien
 	vector <MainObject> p_object1(26);
