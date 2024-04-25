@@ -17,7 +17,7 @@ Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ t
 - [6. KIỂM TRA THẤT BẠI](#6-kiếm-tra-thất-bại)
 - [7. KẾT THÚC VÀ QUAY LẠI MENU](#7-kết-thúc-và-quay-lại-menu)
 
-##1. KHỞI ĐỘNG GAME
+#1. KHỞI ĐỘNG GAME
 
 -Trước tiên bạn khởi động game bằng cách vào thư mục chứa game và chạy file .exe
 
@@ -38,7 +38,7 @@ Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ t
 -Và bạn sẽ chọn level để chơi game
 
 
-##2. BỐ CỤC MENU GAME
+#2. BỐ CỤC MENU GAME
 
 -Xuất hiện trước màn hình là menu của game:
 
@@ -54,7 +54,7 @@ Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ t
 
 -Ở phía trên góc bên phải sẽ là 3 chiếc mũ có đánh số 1, 2, 3 là phần các bạn sẽ chọn mức độ khó của game theo mức độ tăng dần: dễ, trung bình, khó.
 
-##3. CHỌN LEVEL
+#3. CHỌN LEVEL
 
 --Ở phía trên góc bên phải sẽ là 3 chiếc mũ có đánh số 1, 2, 3 là phần các bạn sẽ chọn mức độ khó của game theo mức độ tăng dần: dễ, trung bình, khó.
 
@@ -65,7 +65,7 @@ Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ t
 
 -Các bạn sẽ nhấp vào chiếc mũ mang số thứ tự 1, 2, 3 theo mức độ mà bạn muốn chơi.
 
-##4. CÁCH CHƠI GAME
+#4. CÁCH CHƠI GAME
 
 -Sau khi đã chọn được mức độ game mà bạn muốn thử sức thì chào mừng bạn đến với game Hangman của mình.
 
@@ -94,7 +94,7 @@ sống của bạn vẫn lớn hơn 0 thì có nghĩa là bạn đã chiến th�
 
 -Ảnh ở trên mình đưa ra là do mình ấn nhầm 1 phím nên nó mới in ra phần đầu và trừ đi 1 mạng.
 
-##5. KIỂM TRA CHIẾN THẮNG
+#5. KIỂM TRA CHIẾN THẮNG
 -Khi bạn đoán đúng tất cả các chữ cái có trong từ mà máy đưa ra và số mạng sống còn lại của bạn lơn hơn 0 thì tức là
 bạn đã chiến thắng.
 
@@ -115,7 +115,7 @@ chúc mừng bạn
 
 
 
-##6. KIỂM TRA THUA CUỘC
+#6. KIỂM TRA THẤT BẠI
 
 -Khi số mạng sống của bạn bằng 0 và bạn không đoán được đúng các chữ cái trong từ mà máy đã cho thì bạn là người thua cuộc
 
@@ -139,8 +139,7 @@ viên bạn cố gắng lần sau.
 
 
 
-##7. KẾT THÚC GAME VÀ QUAY LẠI MENU
-
+#7. KẾT THÚC VÀ QUAY LẠI MENU
 -Sau khi chiến thắng hoặc thua cuộc trong game thì game sẽ phát ra âm thanh phù hợp với hoàn cảnh của bạn lúc bấy giờ.
 
 -Sau khi phát xog âm thanh thì game sẽ tự động quay về MENU ban đầu. Nếu muốn chơi tiếp thì bạn có thể lặp lại từ bước đầu,
