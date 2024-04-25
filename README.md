@@ -9,8 +9,8 @@
 con người: đầu, tay trái, tay phải, chân trái, chân phải. Khi đã in ra thành hình con người bị treo cổ thì có nghĩa là bạn đã thua.
 Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ thì bạn là người chiến thắng.
   
-- [1. KHỞI ĐỘNG GAME](#1khởi-động-game)
-- [2. BỐ CỤC MENU GAME](#2bố-cục-menu-game)
+- [1. KHỞI ĐỘNG GAME](#1-khởi-động-game)
+- [2. BỐ CỤC MENU GAME](#2-bố-cục-menu-game)
 - [3. CHỌN LEVEL](#3-chọn-level)
 - [4. CÁCH CHƠI GAME](#4-cách-chơi-game)
 - [5. KIỂM TRA CHIẾN THẮNG](#5-kiểm-tra-chiến-thắng)
