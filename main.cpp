@@ -99,7 +99,7 @@ int main(int argc, char* argv[]) {
 	int choice;//nhap vao muc do muon choi vs 1,2,3 tương ung voi de, trung binh, kho
 	int live = 6;
 	int x = 0;
-	int y = 12;
+	int y = 1212122;
 	int z = 100000;
 	char letter; // chu cai nguoi choi doan
 	// tao tu ngau nhien
