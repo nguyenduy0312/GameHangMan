@@ -9,13 +9,13 @@
 con người: đầu, tay trái, tay phải, chân trái, chân phải. Khi đã in ra thành hình con người bị treo cổ thì có nghĩa là bạn đã thua.
 Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ thì bạn là người chiến thắng.
   
-- [1.KHỞI ĐỘNG GAME](#1bắt-đầu-game)
-- [2.BỐ CỤC MENU GAME](#2chọn-level)
-- [3.CHỌN LEVEL](#3-chọn-level)
-- [4.CÁCH CHƠI GAME](#4-cách-chơi-game)
-- [5.KIỂM TRA CHIẾN THẮNG](#5-kiểm-tra-chiến-thắng)
-- [6.KIỂM TRA THẤT BẠI](#6-kiếm-tra-thất-bại)
-- [7.KẾT THÚC VÀ QUAY LẠI MENU](#7-kết-thúc-và-quay-lại-menu)
+- [1. KHỞI ĐỘNG GAME](#1bắt-đầu-game)
+- [2. BỐ CỤC MENU GAME](#2chọn-level)
+- [3. CHỌN LEVEL](#3-chọn-level)
+- [4. CÁCH CHƠI GAME](#4-cách-chơi-game)
+- [5. KIỂM TRA CHIẾN THẮNG](#5-kiểm-tra-chiến-thắng)
+- [6. KIỂM TRA THẤT BẠI](#6-kiếm-tra-thất-bại)
+- [7. KẾT THÚC VÀ QUAY LẠI MENU](#7-kết-thúc-và-quay-lại-menu)
 
 ##1. KHỞI ĐỘNG GAME
 -Trước tiên bạn khởi động game bằng cách vào thư mục chứa game và chạy file .exe
@@ -90,6 +90,8 @@ Còn nếu chưa in ra hết phần người mà bạn đã đoán đúng từ t
 -Máy sẽ cho bạn 1 từ bất kì để bạn đoán, ban sẽ dựa trên sự phỏng đoán và số ô "?" có trên hình mà đoán từ máy cho,
 nếu số mạng sống của bạn = 0 tức là bạn đã hết cơ hội đoán và bạn đã thua. Nếu sau khi bạn đoán đúng từ mà số mạng
 sống của bạn vẫn lớn hơn 0 thì có nghĩa là bạn đã chiến thắng.
+
+-Ảnh ở trên mình đưa ra là do mình ấn nhầm 1 phím nên nó mới in ra phần đầu và trừ đi 1 mạng.
 
 ##5. KIỂM TRA CHIẾN THẮNG
 -Khi bạn đoán đúng tất cả các chữ cái có trong từ mà máy đưa ra và số mạng sống còn lại của bạn lơn hơn 0 thì tức là
