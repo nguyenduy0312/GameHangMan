@@ -1,6 +1,5 @@
 # HANGMAN GANE
-- Thử nghiệm game: https://youtu.be/EziCb7U9UbU](https://youtu.be/t4_cgdreN7w))
-
+- Thử nghiệm game: ([https://youtu.be/EziCb7U9UbU](https://www.youtube.com/watch?v=t4_cgdreN7w))
 # GIỚI THIỆU GAME:
 
 -Hangman, còn được gọi là game "treo cổ" cổ điển, bạn sẽ phải đoán một từ bằng cách chọn các chữ cái mà bạn nghĩ có thể có trong đó.
