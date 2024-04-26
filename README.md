@@ -1,5 +1,5 @@
 # HANGMAN GANE
-- Thử nghiệm game: [https://youtu.be/EyTwTOWr5zU]([https://youtu.be/EziCb7U9UbU](https://youtu.be/t4_cgdreN7w))
+- Thử nghiệm game: https://youtu.be/EziCb7U9UbU](https://youtu.be/t4_cgdreN7w))
 
 # GIỚI THIỆU GAME:
 
