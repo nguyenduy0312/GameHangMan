@@ -14,7 +14,7 @@ BaseObject g_background;
 vector<bool>so(10, false);
 int RandomNumber(int);
 
-
+//ábbasas
 bool InitData() {
 	bool success = true;
 	int ret = SDL_Init(SDL_INIT_VIDEO);
